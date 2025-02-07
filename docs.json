@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Bones AI Agent Framework - by Ghost Security",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -17,12 +17,62 @@
             "group": "Get Started",
             "pages": [
               "introduction",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Concepts",
+            "pages": [
+              {
+                "group": "Agents",
+                "pages": [
+                  "agents/introduction",
+                  "agents/run",
+                  "agents/structured_output",
+                  "agents/tools",
+                  "agents/memory"
+                ]
+              },
+              {
+                "group": "Models",
+                "pages": [
+                  "models/openai",
+                  "models/anthropic",
+                  "models/cohere",
+                  "models/ollama"
+                ]
+              },
+              {
+                "group": "Tools",
+                "pages": [
+                  "tools/file",
+                  "tools/firecrawl",
+                  "tools/jira",
+                  "tools/linear",
+                  "tools/shell"
+                ]
+              },
+              {
+                "group": "Vector DBs",
+                "pages": [
+                  "db/pgvector",
+                  "db/pinecone",
+                  "db/libsql"
+                ]
+              },
+              {
+                "group": "Embedding",
+                "pages": [
+                  "embedding/intro",
+                  "embedding/openai",
+                  "embedding/gemini",
+                  "embedding/ollama"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Examples",
             "pages": [
               "essentials/markdown",
               "essentials/code",
@@ -93,9 +143,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/ghostsecurityhq",
+      "github": "https://github.com/ghostsecurity/bones",
+      "linkedin": "https://www.linkedin.com/company/ghostsecurity"
     }
   }
 }

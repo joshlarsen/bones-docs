@@ -3,9 +3,82 @@ title: 'Quickstart'
 description: 'Start building awesome documentation in under 5 minutes'
 ---
 
-## Setup your development
+## Add Bones to your project
 
 Learn how to update your docs locally and deploy them to the public.
+
+<Steps>
+  <Step title="First Step">
+    These are instructions or content that only pertain to the first step.
+
+    <CodeGroup>
+    ```shell macOS
+    go get github.com/ghostsecurity/bones
+    ```
+
+    ```shell Windows
+    go get github.com/ghostsecurity/bones
+    ```
+
+    ```shell Linux
+    go get github.com/ghostsecurity/bones
+    ```
+    </CodeGroup>
+  </Step>
+  <Step title="Second Step">
+    Export API keys for the providers you'll be using in your project.
+
+    <CodeGroup>
+    ```shell macOS
+    export OPENAI_API_KEY=sk-***
+    ```
+
+    ```powershell Windows
+    setx OPENAI_API_KEY sk-***
+    ```
+
+    ```shell Linux
+    export OPENAI_API_KEY=sk-***
+    ```
+    </CodeGroup>
+  </Step>
+  <Step title="Third Step">
+    Create your first agent.
+
+    ```go main.go {10}
+    package main
+
+    import (
+      "os"
+
+      "github.com/ghostsecurity/bones"
+    )
+
+    func main() {
+      agent := bones.NewAgent()
+    }
+    ```
+  </Step>
+  <Step title="Fourth Step">
+    Run your first agent.
+
+    ```go main.go {12}
+    package main
+
+    import (
+      "os"
+
+      "github.com/ghostsecurity/bones"
+    )
+
+    func main() {
+      agent := bones.NewAgent()
+
+      agent.Run()
+    }
+    ```
+  </Step>
+</Steps>
 
 ### Edit and preview
 
